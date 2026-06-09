@@ -1,0 +1,59 @@
+{
+  "realm": "task-mgmt",
+  "enabled": true,
+  "clients": [
+    {
+      "clientId": "task-mgmt-client",
+      "enabled": true,
+      "publicClient": false,
+      "secret": "task-mgmt-secret-key",
+      "redirectUris": ["http://localhost:8003"],
+      "webOrigins": ["+"],
+      "protocol": "openid-connect",
+      "serviceAccountsEnabled": true,
+      "standardFlowEnabled": true,
+      "directAccessGrantsEnabled": true,
+      "authorizationServicesEnabled": true,
+      "bearerOnly": false,
+      "baseUrl": "http://localhost:8003",
+      "attributes": {
+        "client_credentials.use_refresh_token": "true",
+        "access.token.lifespan": "86400"
+      }
+    }
+  ],
+  "users": [
+    {
+      "username": "admin",
+      "firstName": "Super",
+      "lastName": "Admin",
+      "email": "admin@taskmgmt.com",
+      "enabled": true,
+      "emailVerified": true,
+      "credentials": [
+        {
+          "type": "password",
+          "value": "admin",
+          "temporary": false
+        }
+      ],
+      "realmRoles": ["ADMIN"]
+    }
+  ],
+  "roles": {
+    "realm": [
+      {
+        "name": "ADMIN",
+        "description": "Administrator role"
+      },
+      {
+        "name": "MANAGER",
+        "description": "One of the user role in task-mgmt"
+      },
+      {
+        "name": "EMPLOYEE",
+        "description": "One of the user role in task-mgmt"
+      }
+    ]
+  }
+}

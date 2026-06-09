@@ -1,0 +1,32 @@
+{"properties": [
+  {
+    "name": "wdm.tracker.app.jwtSecret",
+    "type": "java.lang.String",
+    "description": "A description for 'wdm.tracker.app.jwtSecret'"
+  },
+  {
+    "name": "wdm.tracker.app.jwtExpirationMs",
+    "type": "java.lang.String",
+    "description": "A description for 'wdm.tracker.app.jwtExpirationMs'"
+  },
+  {
+    "name": "wdm.tracker.app.jwtSecret",
+    "type": "java.lang.String",
+    "description": "A description for 'wdm.tracker.app.jwtSecret'"
+  },
+  {
+    "name": "wdm.tracker.app.jwtSecret",
+    "type": "java.lang.String",
+    "description": "A description for 'wdm.tracker.app.jwtSecret'"
+  },
+  {
+    "name": "wdm.tracker.app.jwtSecret",
+    "type": "java.lang.String",
+    "description": "A description for 'wdm.tracker.app.jwtSecret'"
+  },
+  {
+    "name": "wdm.tracker.app.jwtSecret",
+    "type": "java.lang.String",
+    "description": "A description for 'wdm.tracker.app.jwtSecret'"
+  }
+]}

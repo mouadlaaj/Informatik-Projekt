@@ -1,0 +1,48 @@
+# Local runtime files
+.runtime/
+.vscode/
+.idea/
+*.log
+*.tmp
+*.bak
+.DS_Store
+
+# Environment and local secrets
+**/.env
+**/.env.*
+!**/.env.example
+task-mgmt/src/main/resources/application.properties
+
+# Dependencies
+**/node_modules/
+
+# Build output
+frontend/build/
+frontend/coverage/
+task-mgmt/target/
+**/build/
+
+# IDE metadata
+task-mgmt/.classpath
+task-mgmt/.factorypath
+task-mgmt/.project
+task-mgmt/.settings/
+task-mgmt/.apt_generated/
+task-mgmt/.sts4-cache/
+
+# Playwright generated output
+Playwright/playwright-report/
+Playwright/test-results/
+
+# Bundled/runtime Keycloak files. Keep only the realm import.
+keycloak-26.2.5/*
+!keycloak-26.2.5/data/
+keycloak-26.2.5/data/*
+!keycloak-26.2.5/data/import/
+!keycloak-26.2.5/data/import/task-mgmt-keycloak.json
+
+# Local archive exports
+*.zip
+
+# Generated assistant/tooling folders
+.github/java-upgrade/
