@@ -8,6 +8,9 @@ Task management project with:
 - PostgreSQL on `localhost:5435`
 - Playwright end-to-end tests
 
+## Documentation Video
+
+
 ## Local Config
 
 The real backend config is intentionally not committed.
