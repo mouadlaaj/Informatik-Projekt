@@ -10,7 +10,7 @@ Task management project with:
 
 ## Documentation Video
 
-[Project documentation video](https://1drv.ms/v/c/4983a3c4b09703eb/IQAezkh46tQYTIVDq5z3MeDMAfi9auXZDHgRFNS00xvY1xg?e=GyJgU5)
+[![Play Documentation Video](https://img.shields.io/badge/Play-Documentation%20Video-blue?style=for-the-badge)](https://1drv.ms/v/c/4983a3c4b09703eb/IQAezkh46tQYTIVDq5z3MeDMAfi9auXZDHgRFNS00xvY1xg?e=GyJgU5)
 
 ## Local Config
 
