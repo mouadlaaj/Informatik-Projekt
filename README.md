@@ -10,7 +10,7 @@ Task management project with:
 
 ## Local Config
 
-The real backend config is intentionally not committed because it contains local secrets.
+The real backend config is intentionally not committed.
 
 Create it locally:
 
