@@ -303,6 +303,12 @@ function formatApiDateTime(date) {
 }
 
 test.describe.serial("Task Management System workflow from the DOCX", () => {
+  test.beforeAll(() => {
+    if (!MANAGER.password || !process.env.DEFAULT_MEMBER_PASSWORD) {
+      throw new Error("Set MANAGER_PASSWORD and DEFAULT_MEMBER_PASSWORD before running the end-to-end tests.");
+    }
+  });
+
   test("manager creates members, team, project, and task", async ({ page, request }) => {
     await login(page, MANAGER.username, MANAGER.password);
 

@@ -6,7 +6,7 @@
       "clientId": "task-mgmt-client",
       "enabled": true,
       "publicClient": false,
-      "secret": "task-mgmt-secret-key",
+      "secret": "${KEYCLOAK_CLIENT_SECRET}",
       "redirectUris": ["http://localhost:8003"],
       "webOrigins": ["+"],
       "protocol": "openid-connect",
@@ -33,7 +33,7 @@
       "credentials": [
         {
           "type": "password",
-          "value": "admin",
+          "value": "${KEYCLOAK_SEED_ADMIN_PASSWORD}",
           "temporary": false
         }
       ],
