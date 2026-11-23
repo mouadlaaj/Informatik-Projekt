@@ -1,6 +1,6 @@
 const MANAGER = {
   username: process.env.MANAGER_USERNAME || "tsk_001",
-  password: process.env.MANAGER_PASSWORD || "Task@1234",
+  password: process.env.MANAGER_PASSWORD,
 };
 
 function createSuffix() {
@@ -10,6 +10,7 @@ function createSuffix() {
 }
 
 function buildScenarioData() {
+  const memberPassword = process.env.DEFAULT_MEMBER_PASSWORD;
   const suffix = createSuffix();
   const emailSuffix = suffix.toLowerCase();
   const numericTail = Number.parseInt(suffix.replace(/[A-Z]/g, "7"), 10)
@@ -30,7 +31,7 @@ function buildScenarioData() {
       role: "EMPLOYEE",
       gender: "male",
       address: `Dynamic designer address ${suffix}`,
-      password: "Task@1234",
+      password: memberPassword,
     },
     developer: {
       firstName: "Auto",
@@ -42,7 +43,7 @@ function buildScenarioData() {
       role: "EMPLOYEE",
       gender: "male",
       address: `Dynamic developer address ${suffix}`,
-      password: "Task@1234",
+      password: memberPassword,
     },
     tester: {
       firstName: "Auto",
@@ -54,7 +55,7 @@ function buildScenarioData() {
       role: "EMPLOYEE",
       gender: "female",
       address: `Dynamic tester address ${suffix}`,
-      password: "Task@1234",
+      password: memberPassword,
     },
   };
 
